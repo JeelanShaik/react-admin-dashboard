@@ -13,9 +13,10 @@ function App() {
         <div className="app">
           <main className="content">
             <TopBar />
+
+            <Outlet />
           </main>
           {/* <SideBar /> */}
-          {/* <Outlet /> */}
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>

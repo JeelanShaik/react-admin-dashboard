@@ -28,8 +28,16 @@ const TopBar = () => {
       </Box>
       {/* Buttons */}
       <Box display={"flex"}>
-        <IconButton type="button" sx={{ p: 1 }}>
-          <NotificationsOutlinedIcon />
+        <IconButton
+          type="button"
+          sx={{ p: 1 }}
+          onClick={colorMode.toggleColorMode}
+        >
+          {theme.palette.mode === "dark" ? (
+            <DarkModeOutlinedIcon />
+          ) : (
+            <LightModeOutlinedIcon />
+          )}
         </IconButton>
         <IconButton type="button" sx={{ p: 1 }}>
           <NotificationsOutlinedIcon />
