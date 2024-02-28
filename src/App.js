@@ -11,12 +11,11 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
+          <SideBar />
           <main className="content">
             <TopBar />
-
             <Outlet />
           </main>
-          {/* <SideBar /> */}
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
