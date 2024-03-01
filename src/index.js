@@ -9,7 +9,6 @@ import Team from "./scenes/teams/index";
 import Contact from "./scenes/contact";
 import Invoices from "./scenes/invoices";
 import Form from "./scenes/profile-form";
-import Calender from "./scenes/calender";
 import FAQ from "./scenes/faq";
 import Bar from "./scenes/bar";
 import Pie from "./scenes/pie";
@@ -40,10 +39,6 @@ const appRouter = createBrowserRouter([
       {
         path: "/form",
         element: <Form />,
-      },
-      {
-        path: "/calender",
-        element: <Calender />,
       },
       {
         path: "/faq",
